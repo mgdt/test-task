@@ -147,17 +147,20 @@ onBeforeUnmount(() => {
 }
 
 body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: #2b312c;
-  padding-top: 20px;
-  padding-bottom: 20px;
 
   @media (max-width: 768px) {
     justify-content: stretch;
   }
+}
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .wrapper {
@@ -296,9 +299,5 @@ body {
       }
     }
   }
-}
-
-#app {
-  width: 100%;
 }
 </style>
